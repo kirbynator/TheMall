@@ -1,0 +1,7 @@
+<h1>Click a Store To Enter</h1>
+
+<ul>
+  <% @stores.each do |store| %>
+    <li><%= link_to store.name, store %></li>
+  <% end %>
+</ul>

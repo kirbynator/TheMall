@@ -1,0 +1,10 @@
+<h1> Create a new item </h1>
+<%= form_for [@store, @item] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true, autofocus: true %>
+  <%= f.label :price %>
+  <%= f.text_field :price, required: true, autofocus: true %>
+  <%= f.submit %>
+<% end %>
+<h2> or <%= link_to "edit an item", store_items_path %> </h2>
+

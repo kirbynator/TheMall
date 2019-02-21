@@ -1,0 +1,6 @@
+
+<ul>
+  <% @items.each do |item| %>
+    <li><%= item.name %> <%= link_to 'edit', edit_store_item_path(@store, item) %> <%= link_to 'delete', store_item_path(item, @store), method: :delete %></li>
+  <% end %>
+</ul>

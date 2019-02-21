@@ -1,0 +1,8 @@
+<%= link_to 'Create a store', new_store_path %> <%= link_to 'Go to the Mall', root_path %>
+
+<p>Choose a store to edit</p>
+<ul>
+  <% @stores.each do |store| %>
+    <li><%= link_to store.name, edit_store_path(store) %></li>
+  <% end %>
+</ul>
